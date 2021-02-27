@@ -1,0 +1,36 @@
+{
+  "name": "typescript-eslint-prettier-config",
+  "version": "1.0.0",
+  "description": "Add typescript with linting and prettier to your project",
+  "main": "index.js",
+  "bin": "src/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "zero config",
+    "eslint",
+    "eslint-config",
+    "typescript-config",
+    "prettier-config",
+    "cli",
+    "zero-configuration",
+    "easy"
+  ],
+  "repository": "git@github.com:Iannes/typescript-eslint-prettier-config.git",
+  "author": "Yannis Spyrou <yannispyrou@gmail.com>",
+  "private": false,
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "inquirer": "^8.0.0",
+    "npm": "^7.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
+  }
+}
