@@ -1,5 +1,5 @@
 {
-  "name": "typescript-eslint-prettier-config",
+  "name": "zero-config-ts-eslint",
   "version": "1.0.0",
   "description": "Add typescript with linting and prettier to your project",
   "main": "index.js",
