@@ -34,7 +34,11 @@ const runInquirer = (questions) => {
       writeToFile(vsCodeExtensions, "./.vscode/extensions.json");
     }
     if (answers.addPrettier) {
-      writeToFile(prettier, "./src/.prettierrc");
+      if (!fs.existsSync("./src")) {
+        writeToFile(prettier, "./.prettierrc");
+      } else {
+        writeToFile(prettier, "./src/.prettierrc");
+      }
     }
     runInstaller();
   });
