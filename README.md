@@ -1,8 +1,26 @@
-# typescript-eslint-prettier-config
+## TS ESLint prettier config
 
-This zero-config CLI is intended for react projects.This preset is not meant to kill your productivity, just worry about coding : )
+This zero-config CLI is intended for gatbsy projects that are meant to add TypeScript &amp; ESLint support.
 
-## Dependencies
+## Prerequisites
+
+You will need to install the following VS Code plugins:
+
+- [Prettier for VS Code]("https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint for VS Code]("https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint")
+
+### Features
+
+All features are optional, you choose what you want to add 👌
+
+- Adds a `tscofig.json` file
+- Adds an `.eslintrc.json` file
+- Adds a `.vscode` folder with `autosave` feature
+- Adds `.prettierrc` file
+
+### Dependencies
+
+The CLI will add the following dev dependencies to your project:
 
 - prettier
 - eslint
@@ -17,8 +35,6 @@ This zero-config CLI is intended for react projects.This preset is not meant to 
 - @types/react-helmet
 - @typescript-eslint/eslint-plugin
 
-- with prettier support, thanks to [eslint-plugin-prettier](prettier.io/docs/en/eslint.html#use-eslint-to-run-prettier). We take care of formatting the code for you 👌
-
 ## Installation
 
 Run the following command to start the CLI:
@@ -30,4 +46,4 @@ npx zero-config-ts-eslint
 
 ## Assumptions
 
-This project assumes that your project is built with Gatsby
+This project assumes that your project is built with [Gatsby]("https://www.gatsbyjs.com/)
