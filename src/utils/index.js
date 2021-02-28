@@ -37,6 +37,7 @@ const customSpawn = (command, args, options, cb) => {
 const promisifiedSpawn = util.promisify(customSpawn);
 
 const runInstaller = async () => {
+  console.log("\nPreparing to install...\n");
   try {
     await promisifiedSpawn("npm", ["i", "-D", ...dependencies], {
       stdio: "inherit",
