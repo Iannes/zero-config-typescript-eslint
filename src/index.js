@@ -14,13 +14,19 @@ const questions = [
   {
     type: "confirm",
     name: "addESLint",
-    message: "Would you like to add a .eslint.js file?",
+    message: "Would you like to add a .eslint file?",
     default: false,
   },
   {
     type: "confirm",
-    name: "vsCode",
+    name: "addCode",
     message: "Would you like to add a local .vscode folder?",
+    default: false,
+  },
+  {
+    type: "confirm",
+    name: "addPrettier",
+    message: "Would you like to add a .prettierrc file?",
     default: false,
   },
 ];

@@ -18,3 +18,7 @@ Run the following command to start the CLI:
 npx typescript-eslint-prettier-config
 
 ```
+
+## Assumptions
+
+This project assumes that your project is built with Gatsby
