@@ -14,7 +14,7 @@ const questions = [
   {
     type: "confirm",
     name: "addESLint",
-    message: "Would you like to add a .eslint file?",
+    message: "Would you like to add an .eslint file?",
     default: false,
   },
   {
