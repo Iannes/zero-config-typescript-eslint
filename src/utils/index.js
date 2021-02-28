@@ -24,13 +24,13 @@ const runInquirer = (questions) => {
       if (!fs.existsSync(vscodeDir)) {
         fs.mkdirSync(vscodeDir);
       }
-      let settings = JSON.stringify(vsCodeSettings, null, 2);
-      let extensions = JSON.stringify(vsCodeExtensions, null, 2);
+      const settings = JSON.stringify(vsCodeSettings, null, 2);
+      const extensions = JSON.stringify(vsCodeExtensions, null, 2);
       fs.writeFileSync("./.vscode/settings.json", settings);
       fs.writeFileSync("./.vscode/extensions.json", extensions);
     }
     if (answers.addPrettier) {
-      let data = JSON.stringify(prettier, null, 2);
+      const data = JSON.stringify(prettier, null, 2);
       fs.writeFileSync("./src/.prettierrc", data);
     }
     runInstaller();
