@@ -11,8 +11,6 @@ const vsCodeExtensions = require("../config/.vscode/extensions.json");
 const vscodeDir = "./.vscode";
 
 const runInquirer = (questions) => {
-  var cwd = require("path").basename(process.cwd());
-  console.log("CWD: ", cwd);
   inquirer.prompt(questions).then((answers) => {
     if (answers.addTypescript) {
       let data = JSON.stringify(tsconfig, null, 2);
