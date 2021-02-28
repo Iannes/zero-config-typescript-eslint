@@ -3,35 +3,38 @@ const inquirer = require("inquirer");
 const tsconfig = require("../config/tsconfig.json");
 const eslint = require("../config/.eslintrc.json");
 const prettier = require("../config/.prettierrc.json");
+const { globalTSContent } = require("../config/globalTS");
+
 const { runInstaller } = require("./runInstaller");
+const { writeToFile } = require("./writeToFile");
 
 const vsCodeSettings = require("../config/.vscode/settings.json");
 const vsCodeExtensions = require("../config/.vscode/extensions.json");
 
 const vscodeDir = "./.vscode";
 
+const makeDir = (folderName) => {
+  if (!fs.existsSync(folderName)) {
+    fs.mkdirSync(folderName);
+  }
+};
+
 const runInquirer = (questions) => {
   inquirer.prompt(questions).then((answers) => {
     if (answers.addTypescript) {
-      let data = JSON.stringify(tsconfig, null, 2);
-      fs.writeFileSync("./tsconfig.json", data);
+      writeToFile(tsconfig, "./tsconfig.json");
+      fs.writeFileSync("./global.d.ts", globalTSContent);
     }
     if (answers.addESLint) {
-      let data = JSON.stringify(eslint, null, 2);
-      fs.writeFileSync(".eslintrc.json", data);
+      writeToFile(eslint, ".eslintrc.json");
     }
     if (answers.addCode) {
-      if (!fs.existsSync(vscodeDir)) {
-        fs.mkdirSync(vscodeDir);
-      }
-      const settings = JSON.stringify(vsCodeSettings, null, 2);
-      const extensions = JSON.stringify(vsCodeExtensions, null, 2);
-      fs.writeFileSync("./.vscode/settings.json", settings);
-      fs.writeFileSync("./.vscode/extensions.json", extensions);
+      makeDir(vscodeDir);
+      writeToFile(vsCodeSettings, "./.vscode/settings.json");
+      writeToFile(vsCodeExtensions, "./.vscode/extensions.json");
     }
     if (answers.addPrettier) {
-      const data = JSON.stringify(prettier, null, 2);
-      fs.writeFileSync("./src/.prettierrc", data);
+      writeToFile(prettier, "./src/.prettierrc");
     }
     runInstaller();
   });

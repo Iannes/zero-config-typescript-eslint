@@ -17,7 +17,7 @@
     "zero-configuration",
     "easy"
   ],
-  "repository":"git@github.com:Iannes/zero-config-typescript-eslint.git",
+  "repository": "git@github.com:Iannes/zero-config-typescript-eslint.git",
   "author": "Yannis Spyrou <yannispyrou@gmail.com>",
   "private": false,
   "license": "MIT",

@@ -15,6 +15,11 @@ const dependencies = [
   "@typescript-eslint/eslint-plugin",
 ];
 
+/**
+ * Runs npm install command
+ * 
+ */
+
 const runInstaller = async () => {
   console.log("\nPreparing to install...\n");
   try {
