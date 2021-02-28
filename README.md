@@ -1,6 +1,6 @@
-## TS ESLint prettier config
+## Zero Config TS Eslint Prettier
 
-This zero-config CLI is intended for gatbsy projects that are meant to add TypeScript &amp; ESLint support.
+This zero-config CLI is intended for React projects that are meant to add TypeScript &amp; ESLint support.
 
 ## Prerequisites
 
