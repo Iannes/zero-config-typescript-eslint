@@ -40,7 +40,7 @@ const runInquirer = (questions) => {
         writeToFile(prettier, "./src/.prettierrc");
       }
     }
-    runInstaller();
+    runInstaller(answers);
   });
 };
 
