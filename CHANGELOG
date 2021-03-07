@@ -1,0 +1,19 @@
+v1.1.0
+
+    Add semantic-release
+
+v1.0.3
+
+    Only install dependencies the user selected
+    Removed npm dependency
+    Added prettier as default formatter
+
+v1.0.2
+
+    Added src folder check
+    Removed devDependencies
+
+v1.0.1
+
+    Initial release
+
