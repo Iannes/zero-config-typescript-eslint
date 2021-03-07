@@ -1,3 +1,15 @@
+v.1.2.1
+
+Bug Fixes
+
+    release drafter syntax (#7) (099d605)
+v1.2.0
+
+Features
+
+    add release-drafter (#6) (d4cf4d4)
+
+
 v1.1.0
 
     Add semantic-release
