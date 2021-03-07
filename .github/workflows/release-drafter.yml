@@ -2,10 +2,11 @@ name: Release Drafter
 
 on:
   push:
-    # branches to consider in the event; optional, defaults to all
+    
     branches:
       - main
-
+  pull_request:
+    types: [ assigned, opened, synchronize, reopened ]
 jobs:
   update_release_draft:
     runs-on: ubuntu-latest
