@@ -1,6 +1,6 @@
 {
   "name": "zero-config-ts-eslint",
-  "version": "1.0.3",
+  "version": "0.0.0-development",
   "description": "Add typescript with linting and prettier to your project",
   "main": "index.js",
   "bin": "src/index.js",
@@ -21,5 +21,8 @@
   "dependencies": {
     "fs-extra": "^9.1.0",
     "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.4.1"
   }
 }
