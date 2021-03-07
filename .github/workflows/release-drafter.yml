@@ -3,9 +3,6 @@ name: Release Drafter
 on:
   push:
     
-    branches:
-      - main
-      - feature/*
   pull_request:
     types: [ assigned, opened, synchronize, reopened ]
 jobs:
