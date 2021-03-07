@@ -1,8 +1,9 @@
-v.1.2.1
+v.1.2.3
 
 Bug Fixes
 
-    release drafter syntax (#7) (099d605)
+    add validate yml (#9) (4a8aec8)
+    
 v1.2.2
 
 Bug Fixes
